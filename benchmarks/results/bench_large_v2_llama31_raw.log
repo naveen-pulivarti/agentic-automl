@@ -1,0 +1,147 @@
+
+======================================================================
+covertype_classification.csv  target=cover_type
+======================================================================
+  loaded 200,000 rows x 55 cols (0.5s)
+2026-08-10 00:57:27,253 | INFO    | src.data.profiler | Profiled dataset: 200000 rows x 55 cols, problem=classification
+2026-08-10 00:57:35,894 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: f1_macro=0.6342 (8.4s)
+2026-08-10 00:59:08,773 | INFO    | src.agent.llm | Salvaged partial LLM output for FeatureProposalBatch
+2026-08-10 00:59:08,774 | INFO    | src.stages.feature_engineering | Round 1 proposed 1 features (llm=True)
+2026-08-10 00:59:16,168 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: f1_macro=0.6252 (7.3s)
+2026-08-10 00:59:31,774 | INFO    | src.stages.feature_engineering | Round 2 proposed 0 features (llm=True)
+2026-08-10 01:00:00,728 | INFO    | src.stages.feature_engineering | Round 3 proposed 0 features (llm=True)
+2026-08-10 01:00:00,728 | INFO    | src.stages.feature_engineering | Feature engineering kept 0/1 features; score 0.6342 -> 0.6342 (153.3s of 300s budget)
+2026-08-10 01:00:00,986 | INFO    | src.ml.feature_ranking | Ranking method 'variance' completed.
+2026-08-10 01:00:01,011 | INFO    | src.ml.feature_ranking | Ranking method 'pearson' completed.
+python.exe : C:\Users\saina\OneDrive\Desktop\agentic-automl_old\agentic-automl\src\ml\feature_ranking.py:108: 
+ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+At line:1 char:474
++ ... ic-automl"; & "$p\.venv\Scripts\python.exe" "$p\benchmarks\bench_larg ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\saina\...is not defined.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  rho, _ = spearmanr(Xe[c].to_numpy(), yv)
+2026-08-10 01:00:01,142 | INFO    | src.ml.feature_ranking | Ranking method 'spearman' completed.
+C:\Users\saina\OneDrive\Desktop\agentic-automl_old\agentic-automl\.venv\Lib\site-packages\sklearn\feature_selection\_un
+ivariate_selection.py:110: UserWarning: Features [28] are constant.
+  warnings.warn("Features %s are constant." % constant_features_idx, UserWarning)
+C:\Users\saina\OneDrive\Desktop\agentic-automl_old\agentic-automl\.venv\Lib\site-packages\sklearn\feature_selection\_un
+ivariate_selection.py:111: RuntimeWarning: invalid value encountered in divide
+  f = msb / msw
+2026-08-10 01:00:01,208 | INFO    | src.ml.feature_ranking | Ranking method 'f_test' completed.
+2026-08-10 01:00:05,174 | INFO    | src.ml.feature_ranking | Ranking method 'mutual_info' completed.
+2026-08-10 01:00:05,471 | INFO    | src.ml.feature_ranking | Ranking method 'rf_gain' completed.
+2026-08-10 01:00:08,650 | INFO    | src.ml.feature_ranking | Ranking method 'l1_coef' completed.
+2026-08-10 01:00:10,070 | INFO    | src.ml.feature_ranking | Ranking method 'rfe' completed.
+2026-08-10 01:00:16,631 | INFO    | src.ml.feature_ranking | Ranking method 'permutation' completed.
+2026-08-10 01:00:20,495 | INFO    | src.ml.feature_ranking | Ranking method 'mrmr' completed.
+2026-08-10 01:00:57,361 | WARNING | src.agent.llm | LLM output invalid (attempt 1/3): no valid subsets in batch
+2026-08-10 01:01:27,687 | WARNING | src.agent.llm | LLM output invalid (attempt 2/3): no valid subsets in batch
+2026-08-10 01:02:01,388 | WARNING | src.agent.llm | LLM output invalid (attempt 3/3): no valid subsets in batch
+2026-08-10 01:02:01,388 | WARNING | src.agent.llm | LLM failed validation 3 times (no valid subsets in batch); using heuristic fallback.
+2026-08-10 01:02:06,631 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: f1_macro=0.6342 (5.2s)
+2026-08-10 01:02:09,153 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: f1_macro=0.6552 (2.5s)
+2026-08-10 01:02:12,822 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: f1_macro=0.6552 (3.7s)
+2026-08-10 01:02:17,519 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: f1_macro=0.6395 (4.7s)
+2026-08-10 01:02:17,521 | INFO    | src.stages.feature_selection | Feature selection winner=top_25pct_by_rank kept=14 dropped=40 score=0.6552 (136.8s of 300s budget)
+C:\Users\saina\OneDrive\Desktop\agentic-automl_old\agentic-automl\.venv\Lib\site-packages\sklearn\metrics\_classificati
+on.py:1879: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. 
+Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+C:\Users\saina\OneDrive\Desktop\agentic-automl_old\agentic-automl\.venv\Lib\site-packages\sklearn\metrics\_classificati
+on.py:1879: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. 
+Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+C:\Users\saina\OneDrive\Desktop\agentic-automl_old\agentic-automl\.venv\Lib\site-packages\sklearn\metrics\_classificati
+on.py:1879: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. 
+Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+2026-08-10 01:02:28,202 | INFO    | src.ml.trainer | Evaluated logistic_regression on 20000 rows: f1_macro=0.4749 (0.7s)
+2026-08-10 01:02:29,218 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: f1_macro=0.6715 (1.0s)
+2026-08-10 01:02:31,683 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: f1_macro=0.6552 (2.5s)
+2026-08-10 01:02:31,683 | INFO    | src.stages.model_selection | Selected best model: random_forest (0.6715) (14.2s of 300s budget)
+2026-08-10 01:02:40,631 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: f1_macro=0.6774 (1.9s)
+2026-08-10 01:02:50,727 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: f1_macro=0.6775 (2.8s)
+2026-08-10 01:02:59,018 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: f1_macro=0.5053 (0.7s)
+2026-08-10 01:03:09,799 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: f1_macro=0.6761 (3.8s)
+2026-08-10 01:03:09,799 | INFO    | src.stages.tuning | Tuning done. Best params={'n_estimators': 300} score=0.6775 (38.1s of 300s budget)
+
+  problem      : classification
+  best model   : random_forest {'n_estimators': 300}
+  baseline     : 0.6342336745690952
+  engineered   : 0.6342336745690952
+  selection    : 0.6552394230685451 (winner=top_25pct_by_rank)
+  tuned        : 0.6774933617598236
+  HELD-OUT     : {'accuracy': 0.910225, 'f1_macro': 0.851055337017336, 'precision_macro': 0.9042016740024966, 'recall_macro': 0.8129621646753334}
+  kept feats   : []
+  cols kept    : 14 (dropped 40)
+  used_llm     : True ['Feature Engineering', 'Model Selection', 'Hyperparameter Tuning']
+  stage times  : {'Profiling': 0.7049930095672607, 'Feature Engineering': 153.25604939460754, 'Feature Selection': 136.78596019744873, 'Model Selection': 14.161397933959961, 'Hyperparameter Tuning': 38.1166877746582, 'Finalising': 18.09774351119995}
+  TOTAL        : 361.7s
+
+======================================================================
+gpu_performance_regression.csv  target=target_value
+======================================================================
+  loaded 200,000 rows x 15 cols (0.4s)
+2026-08-10 01:03:28,473 | INFO    | src.data.profiler | Profiled dataset: 200000 rows x 15 cols, problem=regression
+2026-08-10 01:03:29,128 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9882 (0.6s)
+2026-08-10 01:04:11,786 | INFO    | src.agent.llm | Salvaged partial LLM output for FeatureProposalBatch
+2026-08-10 01:04:11,786 | INFO    | src.stages.feature_engineering | Round 1 proposed 3 features (llm=True)
+2026-08-10 01:04:12,345 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9895 (0.5s)
+2026-08-10 01:04:13,194 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9886 (0.7s)
+2026-08-10 01:04:13,881 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9897 (0.7s)
+2026-08-10 01:04:48,959 | INFO    | src.stages.feature_engineering | Round 2 proposed 4 features (llm=True)
+2026-08-10 01:04:49,632 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9895 (0.7s)
+2026-08-10 01:04:50,327 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9913 (0.7s)
+2026-08-10 01:04:51,077 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9913 (0.7s)
+2026-08-10 01:04:51,784 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9913 (0.7s)
+2026-08-10 01:05:23,924 | INFO    | src.stages.feature_engineering | Round 3 proposed 4 features (llm=True)
+2026-08-10 01:05:24,628 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9912 (0.7s)
+2026-08-10 01:05:25,336 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9911 (0.7s)
+2026-08-10 01:05:26,161 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9914 (0.7s)
+2026-08-10 01:05:26,950 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9914 (0.8s)
+2026-08-10 01:05:26,950 | INFO    | src.stages.feature_engineering | Feature engineering kept 5/11 features; score 0.9882 -> 0.9914 (118.4s of 300s budget)
+2026-08-10 01:05:27,046 | INFO    | src.ml.feature_ranking | Ranking method 'variance' completed.
+2026-08-10 01:05:27,062 | INFO    | src.ml.feature_ranking | Ranking method 'pearson' completed.
+2026-08-10 01:05:27,143 | INFO    | src.ml.feature_ranking | Ranking method 'spearman' completed.
+2026-08-10 01:05:27,173 | INFO    | src.ml.feature_ranking | Ranking method 'f_test' completed.
+2026-08-10 01:05:29,409 | INFO    | src.ml.feature_ranking | Ranking method 'mutual_info' completed.
+2026-08-10 01:05:29,821 | INFO    | src.ml.feature_ranking | Ranking method 'rf_gain' completed.
+2026-08-10 01:05:32,907 | INFO    | src.ml.feature_ranking | Ranking method 'l1_coef' completed.
+2026-08-10 01:05:34,156 | INFO    | src.ml.feature_ranking | Ranking method 'rfe' completed.
+2026-08-10 01:05:36,358 | INFO    | src.ml.feature_ranking | Ranking method 'permutation' completed.
+2026-08-10 01:05:38,639 | INFO    | src.ml.feature_ranking | Ranking method 'mrmr' completed.
+2026-08-10 01:06:28,813 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9914 (0.6s)
+2026-08-10 01:06:29,257 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.8827 (0.4s)
+2026-08-10 01:06:29,804 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.8824 (0.5s)
+2026-08-10 01:06:30,373 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9899 (0.6s)
+2026-08-10 01:06:30,668 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.4062 (0.3s)
+2026-08-10 01:06:31,116 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.8824 (0.4s)
+2026-08-10 01:06:31,492 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.4605 (0.4s)
+2026-08-10 01:06:31,506 | INFO    | src.stages.feature_selection | Feature selection winner=top_75pct_by_rank kept=14 dropped=5 score=0.9899 (64.5s of 300s budget)
+2026-08-10 01:06:42,938 | INFO    | src.ml.trainer | Evaluated ridge on 20000 rows: r2=0.4270 (0.2s)
+2026-08-10 01:06:44,199 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: r2=0.9932 (1.3s)
+2026-08-10 01:06:44,840 | INFO    | src.ml.trainer | Evaluated hist_gradient_boosting on 20000 rows: r2=0.9899 (0.6s)
+2026-08-10 01:06:44,840 | INFO    | src.stages.model_selection | Selected best model: random_forest (0.9932) (13.3s of 300s budget)
+2026-08-10 01:06:54,790 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: r2=0.9932 (2.4s)
+2026-08-10 01:07:03,807 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: r2=0.9930 (0.9s)
+2026-08-10 01:07:15,106 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: r2=0.9932 (4.4s)
+2026-08-10 01:07:24,320 | INFO    | src.ml.trainer | Evaluated random_forest on 20000 rows: r2=0.9932 (1.2s)
+2026-08-10 01:07:24,320 | INFO    | src.stages.tuning | Tuning done. Best params={'max_depth': 15} score=0.9932 (39.5s of 300s budget)
+
+  problem      : regression
+  best model   : random_forest {'max_depth': 15}
+  baseline     : 0.9882186410428163
+  engineered   : 0.9914129614119399
+  selection    : 0.9899322997845516 (winner=top_75pct_by_rank)
+  tuned        : 0.993241271175534
+  HELD-OUT     : {'r2': 0.9956216157031771, 'rmse': 24.285599176728915, 'mae': 11.61611189234857}
+  kept feats   : ['MWG_NWG_ratio', 'MDIMC_NDIMC_difference', 'MDIMC_MWGW_ratio', 'STRM_STRN_difference', 'SA_SB_interaction']
+  cols kept    : 14 (dropped 5)
+  used_llm     : True ['Feature Engineering', 'Feature Selection', 'Model Selection', 'Hyperparameter Tuning']
+  stage times  : {'Profiling': 0.23691725730895996, 'Feature Engineering': 118.41229605674744, 'Feature Selection': 64.5412483215332, 'Model Selection': 13.334490060806274, 'Hyperparameter Tuning': 39.47573184967041, 'Finalising': 5.793290615081787}
+  TOTAL        : 242.3s
+
+wrote C:\Users\saina\OneDrive\Desktop\agentic-automl_old\agentic-automl\benchmarks\results\bench_large_v2_llama31.json
+

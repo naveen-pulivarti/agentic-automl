@@ -1,0 +1,57 @@
+
+======================================================================
+synthetic_no_fk.csv  (target=churn)
+======================================================================
+2026-08-05 22:44:28,335 | INFO    | src.data.profiler | Profiled dataset: 800 rows x 5 cols, problem=classification
+health_check: ok=False info=Ollama call failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/chat  (31.6s)
+
+[FEATURE ENGINEERING]  used_llm=True  95.3s  calls=1 tokens=1114
+   - age_income_ratio                 ratio        ['age', 'income']
+       reason: Age and income are both relevant for churn prediction, a ratio of these two features might provide additional 
+   - tenure_months_log                log          ['tenure_months']
+       reason: Tenure months is skewed to the right, taking its log might help in normalizing it and improving model performa
+   - age_tenure_interaction           interaction  ['age', 'tenure_months']
+       reason: Both age and tenure months are relevant for churn prediction, an interaction between these two features might 
+   - churn_ratio                      ratio        ['income', 'age']
+       reason: Churn is a binary target variable, creating a ratio of income and age with churn might help in understanding t
+   - tenure_months_income_ratio       ratio        ['tenure_months', 'income']
+       reason: Tenure months and income are both relevant for churn prediction, a ratio of these two features might provide a
+   - age_squared                      square       ['age']
+       reason: Age is a relevant feature for churn prediction, taking its square might help in capturing non-linear relations
+   - region_binning                   binning      ['region']
+       reason: Region is a categorical variable with only 4 unique values, binning it into larger categories might help in re
+   - tenure_months_income_difference  difference   ['tenure_months', 'income']
+       reason: Tenure months and income are both relevant for churn prediction, a difference between these two features might
+
+[MODEL SELECTION]  used_llm=True  18.2s  calls=1 tokens=344
+   models: ['random_forest', 'gradient_boosting', 'logistic_regression']
+   reason: Given the relatively small dataset size (800 rows) and balanced feature types, I'm choosing three models that are known for their performance on classification tasks with a mix of numeric and categori
+
+======================================================================
+california_regression.csv  (target=median_house_value)
+======================================================================
+2026-08-05 22:46:53,457 | INFO    | src.data.profiler | Profiled dataset: 3000 rows x 9 cols, problem=regression
+health_check: ok=True info=ollama:llama3.1  (4.1s)
+
+[FEATURE ENGINEERING]  used_llm=True  82.6s  calls=1 tokens=1450
+   - medinc_houseage_ratio            ratio        ['MedInc', 'HouseAge']
+       reason: The ratio of median income to house age may capture the relationship between economic growth and housing marke
+   - house_age_ave_rooms_interaction  interaction  ['HouseAge', 'AveRooms']
+       reason: The interaction between house age and average rooms per house may reveal how older houses with more rooms affe
+   - medinc_avebedrms_log             log          ['MedInc', 'AveBedrms']
+       reason: The logarithm of median income and average bedrooms per house may help to reduce skewness and capture non-line
+   - latitude_longitude_product       product      ['Latitude', 'Longitude']
+       reason: The product of latitude and longitude may capture the spatial relationship between location and housing market
+   - population_aveoccup_ratio        ratio        ['Population', 'AveOccup']
+       reason: The ratio of population to average occupation per house may reveal how demographic factors affect the housing 
+   - house_age_median_house_value_difference difference   ['HouseAge', 'median_house_value']  <-- INVALID COLUMN  <-- USED TARGET
+       reason: The difference between house age and median house value may capture the relationship between aging houses and 
+   - latitude_date_part               date_part    ['Latitude']
+       reason: The month component of latitude may help to capture seasonal effects on the housing market
+   - longitude_square                 square       ['Longitude']
+       reason: The square of longitude may reduce skewness and capture non-linear relationships between location and housing 
+
+[MODEL SELECTION]  used_llm=True  17.9s  calls=1 tokens=344
+   models: ['ridge', 'random_forest', 'gradient_boosting']
+   reason: Given the relatively small dataset size (3000 rows) and moderate number of features (8), I'm choosing models that are known for their performance on regression tasks with a mix of numeric features. Ri
+

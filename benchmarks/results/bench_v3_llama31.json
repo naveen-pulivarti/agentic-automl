@@ -1,0 +1,365 @@
+{
+  "label": "v3_llama31",
+  "runs": [
+    {
+      "dataset": "iris_classification.csv",
+      "target": "species",
+      "rows": 150,
+      "cols": 5,
+      "seconds": 236.8,
+      "ok": true,
+      "llm_calls": 9,
+      "llm_tokens": 6491,
+      "problem_type": "classification",
+      "best_model": "logistic_regression",
+      "best_params": {},
+      "baseline_score": 0.9414931301138197,
+      "engineered_score": 0.958473296251074,
+      "selection_score": 0.9663433274544385,
+      "selection_winner": "top_25pct_by_rank",
+      "model_selection_score": 0.9663433274544385,
+      "tuned_score": 0.9663433274544385,
+      "final_metrics": {
+        "accuracy": 0.9333333333333333,
+        "f1_macro": 0.9333333333333332,
+        "precision_macro": 0.9333333333333332,
+        "recall_macro": 0.9333333333333332
+      },
+      "kept_features": [
+        "petal_length_petal_width_square",
+        "petal_width_log"
+      ],
+      "selected_features": [
+        "petal width (cm)",
+        "petal_width_log"
+      ],
+      "dropped_features": [
+        "sepal length (cm)",
+        "sepal width (cm)",
+        "petal length (cm)",
+        "petal_length_petal_width_square"
+      ],
+      "used_llm": true,
+      "llm_stages": [
+        "Feature Engineering",
+        "Feature Selection",
+        "Model Selection",
+        "Hyperparameter Tuning"
+      ],
+      "n_decisions": 34,
+      "stage_seconds": {
+        "Profiling": 0.049997806549072266,
+        "Feature Engineering": 151.30642819404602,
+        "Feature Selection": 41.39050793647766,
+        "Model Selection": 12.87601923942566,
+        "Hyperparameter Tuning": 31.093205451965332,
+        "Finalising": 0.03631448745727539
+      }
+    },
+    {
+      "dataset": "wine_classification.csv",
+      "target": "wine_class",
+      "rows": 178,
+      "cols": 14,
+      "seconds": 236.0,
+      "ok": true,
+      "llm_calls": 9,
+      "llm_tokens": 9445,
+      "problem_type": "classification",
+      "best_model": "logistic_regression",
+      "best_params": {
+        "C": 1000
+      },
+      "baseline_score": 0.9524519297106121,
+      "engineered_score": 0.9663729458296522,
+      "selection_score": 0.9663729458296522,
+      "selection_winner": "all_features",
+      "model_selection_score": 0.979009475425246,
+      "tuned_score": 0.9928817706595484,
+      "final_metrics": {
+        "accuracy": 1.0,
+        "f1_macro": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0
+      },
+      "kept_features": [
+        "total_phenols_flavanoids_ratio",
+        "alcohol_proline_product"
+      ],
+      "selected_features": [
+        "alcohol",
+        "malic_acid",
+        "ash",
+        "alcalinity_of_ash",
+        "magnesium",
+        "total_phenols",
+        "flavanoids",
+        "nonflavanoid_phenols",
+        "proanthocyanins",
+        "color_intensity",
+        "hue",
+        "od280/od315_of_diluted_wines",
+        "proline",
+        "total_phenols_flavanoids_ratio",
+        "alcohol_proline_product"
+      ],
+      "dropped_features": [],
+      "used_llm": true,
+      "llm_stages": [
+        "Feature Engineering",
+        "Feature Selection",
+        "Model Selection",
+        "Hyperparameter Tuning"
+      ],
+      "n_decisions": 34,
+      "stage_seconds": {
+        "Profiling": 0.03234386444091797,
+        "Feature Engineering": 135.42276453971863,
+        "Feature Selection": 56.65967917442322,
+        "Model Selection": 14.257761478424072,
+        "Hyperparameter Tuning": 29.53744387626648,
+        "Finalising": 0.027363061904907227
+      }
+    },
+    {
+      "dataset": "synthetic_no_fk.csv",
+      "target": "churn",
+      "rows": 800,
+      "cols": 5,
+      "seconds": 176.0,
+      "ok": true,
+      "llm_calls": 9,
+      "llm_tokens": 6289,
+      "problem_type": "classification",
+      "best_model": "random_forest",
+      "best_params": {
+        "max_depth": 10
+      },
+      "baseline_score": 0.6788303614010167,
+      "engineered_score": 0.7164832697008673,
+      "selection_score": 0.7164832697008673,
+      "selection_winner": "all_features",
+      "model_selection_score": 0.7164832697008673,
+      "tuned_score": 0.723966077246221,
+      "final_metrics": {
+        "accuracy": 0.75625,
+        "f1_macro": 0.69648329198891,
+        "precision_macro": 0.7082393933183029,
+        "recall_macro": 0.6889880952380952,
+        "roc_auc": 0.822172619047619
+      },
+      "kept_features": [
+        "age_income_ratio",
+        "tenure_months_square",
+        "tenure_months_monthly_ratio"
+      ],
+      "selected_features": [
+        "age",
+        "income",
+        "tenure_months",
+        "region",
+        "age_income_ratio",
+        "tenure_months_square",
+        "tenure_months_monthly_ratio"
+      ],
+      "dropped_features": [],
+      "used_llm": true,
+      "llm_stages": [
+        "Feature Engineering",
+        "Feature Selection",
+        "Model Selection",
+        "Hyperparameter Tuning"
+      ],
+      "n_decisions": 34,
+      "stage_seconds": {
+        "Profiling": 0.010016918182373047,
+        "Feature Engineering": 100.86943101882935,
+        "Feature Selection": 34.381892919540405,
+        "Model Selection": 9.724399328231812,
+        "Hyperparameter Tuning": 30.717681646347046,
+        "Finalising": 0.2738053798675537
+      }
+    },
+    {
+      "dataset": "diabetes_regression.csv",
+      "target": "disease_progression",
+      "rows": 442,
+      "cols": 11,
+      "seconds": 190.6,
+      "ok": true,
+      "llm_calls": 9,
+      "llm_tokens": 8588,
+      "problem_type": "regression",
+      "best_model": "ridge",
+      "best_params": {
+        "alpha": 0.1
+      },
+      "baseline_score": 0.40984666879915627,
+      "engineered_score": 0.4130779989535596,
+      "selection_score": 0.4130779989535596,
+      "selection_winner": "all_features",
+      "model_selection_score": 0.48514203367023323,
+      "tuned_score": 0.48549455541983333,
+      "final_metrics": {
+        "r2": 0.4454274709950955,
+        "rmse": 54.20525264424665,
+        "mae": 42.992073195261085
+      },
+      "kept_features": [
+        "age_bmi_ratio"
+      ],
+      "selected_features": [
+        "age",
+        "sex",
+        "bmi",
+        "bp",
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "age_bmi_ratio"
+      ],
+      "dropped_features": [],
+      "used_llm": true,
+      "llm_stages": [
+        "Feature Engineering",
+        "Feature Selection",
+        "Model Selection",
+        "Hyperparameter Tuning"
+      ],
+      "n_decisions": 35,
+      "stage_seconds": {
+        "Profiling": 0.0,
+        "Feature Engineering": 110.57622694969177,
+        "Feature Selection": 44.05307650566101,
+        "Model Selection": 9.118260860443115,
+        "Hyperparameter Tuning": 26.76885676383972,
+        "Finalising": 0.01929616928100586
+      }
+    },
+    {
+      "dataset": "california_regression.csv",
+      "target": "median_house_value",
+      "rows": 20640,
+      "cols": 9,
+      "seconds": 205.6,
+      "ok": true,
+      "llm_calls": 9,
+      "llm_tokens": 7753,
+      "problem_type": "regression",
+      "best_model": "hist_gradient_boosting",
+      "best_params": {
+        "max_depth": 12
+      },
+      "baseline_score": 0.8291522768472452,
+      "engineered_score": 0.8302812927131273,
+      "selection_score": 0.8299709032501879,
+      "selection_winner": "top_75pct_by_rank",
+      "model_selection_score": 0.8299709032501879,
+      "tuned_score": 0.8306178459183092,
+      "final_metrics": {
+        "r2": 0.8329753912480963,
+        "rmse": 0.4678360256496587,
+        "mae": 0.3111395713318653
+      },
+      "kept_features": [
+        "medinc_houseage_ratio",
+        "houseage_aveoccup_product"
+      ],
+      "selected_features": [
+        "MedInc",
+        "Latitude",
+        "Longitude",
+        "AveRooms",
+        "AveOccup",
+        "HouseAge",
+        "medinc_houseage_ratio",
+        "AveBedrms"
+      ],
+      "dropped_features": [
+        "Population",
+        "houseage_aveoccup_product"
+      ],
+      "used_llm": true,
+      "llm_stages": [
+        "Feature Engineering",
+        "Feature Selection",
+        "Model Selection",
+        "Hyperparameter Tuning"
+      ],
+      "n_decisions": 35,
+      "stage_seconds": {
+        "Profiling": 0.027675390243530273,
+        "Feature Engineering": 112.7087926864624,
+        "Feature Selection": 48.72158765792847,
+        "Model Selection": 13.074214696884155,
+        "Hyperparameter Tuning": 28.73822569847107,
+        "Finalising": 2.236387252807617
+      }
+    },
+    {
+      "dataset": "census_income_classification.csv",
+      "target": "income_over_50k",
+      "rows": 48842,
+      "cols": 14,
+      "seconds": 238.9,
+      "ok": true,
+      "llm_calls": 9,
+      "llm_tokens": 9031,
+      "problem_type": "classification",
+      "best_model": "hist_gradient_boosting",
+      "best_params": {},
+      "baseline_score": 0.806174710156378,
+      "engineered_score": 0.8065965620602977,
+      "selection_score": 0.8065965620602977,
+      "selection_winner": "all_features",
+      "model_selection_score": 0.8065965620602977,
+      "tuned_score": 0.8065965620602977,
+      "final_metrics": {
+        "accuracy": 0.8763435356740711,
+        "f1_macro": 0.8192319263359061,
+        "precision_macro": 0.8443348678518803,
+        "recall_macro": 0.8010213208740256,
+        "roc_auc": 0.9288690051697746
+      },
+      "kept_features": [
+        "capital_gain_fnlwgt_product"
+      ],
+      "selected_features": [
+        "age",
+        "workclass",
+        "fnlwgt",
+        "education",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "capital-gain",
+        "capital-loss",
+        "hours-per-week",
+        "native-country",
+        "capital_gain_fnlwgt_product"
+      ],
+      "dropped_features": [],
+      "used_llm": true,
+      "llm_stages": [
+        "Feature Engineering",
+        "Feature Selection",
+        "Model Selection",
+        "Hyperparameter Tuning"
+      ],
+      "n_decisions": 35,
+      "stage_seconds": {
+        "Profiling": 0.12963557243347168,
+        "Feature Engineering": 133.07561111450195,
+        "Feature Selection": 56.8426787853241,
+        "Model Selection": 12.856820821762085,
+        "Hyperparameter Tuning": 34.3443603515625,
+        "Finalising": 1.5313637256622314
+      }
+    }
+  ]
+}

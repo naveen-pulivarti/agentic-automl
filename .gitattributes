@@ -1,0 +1,6 @@
+# Normalise line endings so the repository is consistent regardless of the
+# platform a contributor is on.
+* text=auto eol=lf
+*.png binary
+*.docx binary
+*.db binary

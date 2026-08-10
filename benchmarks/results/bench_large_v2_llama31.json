@@ -1,0 +1,178 @@
+{
+  "label": "v2_llama31",
+  "runs": [
+    {
+      "dataset": "covertype_classification.csv",
+      "target": "cover_type",
+      "rows": 200000,
+      "cols": 55,
+      "seconds": 361.7,
+      "ok": true,
+      "llm_calls": 11,
+      "llm_tokens": 16833,
+      "problem_type": "classification",
+      "best_model": "random_forest",
+      "best_params": {
+        "n_estimators": 300
+      },
+      "baseline_score": 0.6342336745690952,
+      "engineered_score": 0.6342336745690952,
+      "selection_score": 0.6552394230685451,
+      "selection_winner": "top_25pct_by_rank",
+      "model_selection_score": 0.6715376275405442,
+      "tuned_score": 0.6774933617598236,
+      "final_metrics": {
+        "accuracy": 0.910225,
+        "f1_macro": 0.851055337017336,
+        "precision_macro": 0.9042016740024966,
+        "recall_macro": 0.8129621646753334
+      },
+      "kept_features": [],
+      "selected_features": [
+        "Elevation",
+        "Wilderness_Area_3",
+        "Horizontal_Distance_To_Roadways",
+        "Horizontal_Distance_To_Fire_Points",
+        "Soil_Type_9",
+        "Wilderness_Area_0",
+        "Soil_Type_3",
+        "Soil_Type_21",
+        "Soil_Type_1",
+        "Slope",
+        "Soil_Type_22",
+        "Soil_Type_38",
+        "Soil_Type_37",
+        "Hillshade_9am"
+      ],
+      "dropped_features": [
+        "Aspect",
+        "Horizontal_Distance_To_Hydrology",
+        "Vertical_Distance_To_Hydrology",
+        "Hillshade_Noon",
+        "Hillshade_3pm",
+        "Wilderness_Area_1",
+        "Wilderness_Area_2",
+        "Soil_Type_0",
+        "Soil_Type_2",
+        "Soil_Type_4",
+        "Soil_Type_5",
+        "Soil_Type_6",
+        "Soil_Type_7",
+        "Soil_Type_8",
+        "Soil_Type_10",
+        "Soil_Type_11",
+        "Soil_Type_12",
+        "Soil_Type_13",
+        "Soil_Type_14",
+        "Soil_Type_15",
+        "Soil_Type_16",
+        "Soil_Type_17",
+        "Soil_Type_18",
+        "Soil_Type_19",
+        "Soil_Type_20",
+        "Soil_Type_23",
+        "Soil_Type_24",
+        "Soil_Type_25",
+        "Soil_Type_26",
+        "Soil_Type_27",
+        "Soil_Type_28",
+        "Soil_Type_29",
+        "Soil_Type_30",
+        "Soil_Type_31",
+        "Soil_Type_32",
+        "Soil_Type_33",
+        "Soil_Type_34",
+        "Soil_Type_35",
+        "Soil_Type_36",
+        "Soil_Type_39"
+      ],
+      "used_llm": true,
+      "llm_stages": [
+        "Feature Engineering",
+        "Model Selection",
+        "Hyperparameter Tuning"
+      ],
+      "n_decisions": 19,
+      "stage_seconds": {
+        "Profiling": 0.7049930095672607,
+        "Feature Engineering": 153.25604939460754,
+        "Feature Selection": 136.78596019744873,
+        "Model Selection": 14.161397933959961,
+        "Hyperparameter Tuning": 38.1166877746582,
+        "Finalising": 18.09774351119995
+      }
+    },
+    {
+      "dataset": "gpu_performance_regression.csv",
+      "target": "target_value",
+      "rows": 200000,
+      "cols": 15,
+      "seconds": 242.3,
+      "ok": true,
+      "llm_calls": 9,
+      "llm_tokens": 9614,
+      "problem_type": "regression",
+      "best_model": "random_forest",
+      "best_params": {
+        "max_depth": 15
+      },
+      "baseline_score": 0.9882186410428163,
+      "engineered_score": 0.9914129614119399,
+      "selection_score": 0.9899322997845516,
+      "selection_winner": "top_75pct_by_rank",
+      "model_selection_score": 0.9932123894154831,
+      "tuned_score": 0.993241271175534,
+      "final_metrics": {
+        "r2": 0.9956216157031771,
+        "rmse": 24.285599176728915,
+        "mae": 11.61611189234857
+      },
+      "kept_features": [
+        "MWG_NWG_ratio",
+        "MDIMC_NDIMC_difference",
+        "MDIMC_MWGW_ratio",
+        "STRM_STRN_difference",
+        "SA_SB_interaction"
+      ],
+      "selected_features": [
+        "NWG",
+        "MDIMC_MWGW_ratio",
+        "MWG",
+        "NDIMC",
+        "SA_SB_interaction",
+        "MWG_NWG_ratio",
+        "MDIMC",
+        "MDIMC_NDIMC_difference",
+        "SA",
+        "VWM",
+        "VWN",
+        "SB",
+        "KWG",
+        "KWI"
+      ],
+      "dropped_features": [
+        "MDIMA",
+        "NDIMB",
+        "STRM",
+        "STRN",
+        "STRM_STRN_difference"
+      ],
+      "used_llm": true,
+      "llm_stages": [
+        "Feature Engineering",
+        "Feature Selection",
+        "Model Selection",
+        "Hyperparameter Tuning"
+      ],
+      "n_decisions": 33,
+      "stage_seconds": {
+        "Profiling": 0.23691725730895996,
+        "Feature Engineering": 118.41229605674744,
+        "Feature Selection": 64.5412483215332,
+        "Model Selection": 13.334490060806274,
+        "Hyperparameter Tuning": 39.47573184967041,
+        "Finalising": 5.793290615081787
+      }
+    }
+  ]
+}

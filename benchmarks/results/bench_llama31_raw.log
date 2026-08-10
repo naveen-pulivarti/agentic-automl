@@ -1,0 +1,141 @@
+
+=== iris_classification.csv (target=species) ===
+2026-08-05 22:49:39,691 | INFO    | src.data.profiler | Profiled dataset: 150 rows x 5 cols, problem=classification
+2026-08-05 22:49:44,522 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9665 (4.8s)
+2026-08-05 22:50:46,462 | INFO    | src.stages.feature_engineering | Proposed 7 features (llm=True)
+2026-08-05 22:50:49,970 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9598 (3.5s)
+2026-08-05 22:50:52,640 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9665 (2.7s)
+2026-08-05 22:50:53,031 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9465 (0.4s)
+2026-08-05 22:50:53,342 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9531 (0.3s)
+2026-08-05 22:50:53,342 | WARNING | src.ml.feature_ops | Feature species_sepal_width_interaction skipped: column 'species' not found
+2026-08-05 22:50:53,342 | WARNING | src.ml.feature_ops | Feature year_of_collection skipped: column 'collection date' not found
+2026-08-05 22:50:53,342 | INFO    | src.stages.feature_engineering | Feature engineering kept 0 features; score 0.9665 -> 0.9665
+2026-08-05 22:51:06,212 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9665 (0.3s)
+2026-08-05 22:51:06,534 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.3s)
+2026-08-05 22:51:06,617 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9598 (0.1s)
+2026-08-05 22:51:06,617 | INFO    | src.stages.model_selection | Selected best model: gradient_boosting (0.9666)
+2026-08-05 22:51:14,771 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.3s)
+2026-08-05 22:51:22,751 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.3s)
+2026-08-05 22:51:32,265 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9599 (0.3s)
+2026-08-05 22:51:41,541 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.3s)
+2026-08-05 22:51:53,635 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.3s)
+2026-08-05 22:52:04,099 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.4s)
+2026-08-05 22:52:13,316 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.3s)
+2026-08-05 22:52:22,839 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.4s)
+2026-08-05 22:52:22,839 | INFO    | src.stages.tuning | Tuning done. Best params={} score=0.9666
+  -> classification | best=gradient_boosting | baseline=0.9664818612187034 | tuned=0.9666165413533834 | final={'accuracy': 0.9666666666666667, 'f1_macro': 0.9665831244778612, 'precision_macro': 0.9696969696969697, 'recall_macro': 0.9666666666666667} | kept=[] | used_llm=True | 163.4s
+
+=== wine_classification.csv (target=wine_class) ===
+2026-08-05 22:52:23,061 | INFO    | src.data.profiler | Profiled dataset: 178 rows x 14 cols, problem=classification
+2026-08-05 22:52:23,337 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9782 (0.3s)
+2026-08-05 22:53:44,925 | INFO    | src.stages.feature_engineering | Proposed 8 features (llm=True)
+2026-08-05 22:53:45,234 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9726 (0.3s)
+2026-08-05 22:53:45,546 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9604 (0.3s)
+2026-08-05 22:53:45,854 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9782 (0.3s)
+2026-08-05 22:53:46,132 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9726 (0.3s)
+2026-08-05 22:53:46,132 | WARNING | src.ml.feature_ops | Feature wine_class_color_intensity_interaction skipped: column 'wine_class' not found
+2026-08-05 22:53:46,399 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9778 (0.3s)
+2026-08-05 22:53:46,678 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9723 (0.3s)
+2026-08-05 22:53:46,956 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9834 (0.3s)
+2026-08-05 22:53:46,956 | INFO    | src.stages.feature_engineering | Feature engineering kept 1 features; score 0.9782 -> 0.9834
+2026-08-05 22:54:06,263 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9834 (0.3s)
+2026-08-05 22:54:06,644 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9343 (0.4s)
+2026-08-05 22:54:06,706 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9835 (0.1s)
+2026-08-05 22:54:06,706 | INFO    | src.stages.model_selection | Selected best model: logistic_regression (0.9835)
+2026-08-05 22:54:13,848 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9779 (0.1s)
+2026-08-05 22:54:21,354 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9835 (0.1s)
+2026-08-05 22:54:32,150 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9835 (0.1s)
+2026-08-05 22:54:39,789 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9835 (0.1s)
+2026-08-05 22:54:48,964 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9835 (0.1s)
+2026-08-05 22:54:58,304 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9835 (0.1s)
+2026-08-05 22:55:07,754 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9779 (0.1s)
+2026-08-05 22:55:20,717 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9779 (0.1s)
+2026-08-05 22:55:20,717 | INFO    | src.stages.tuning | Tuning done. Best params={} score=0.9835
+  -> classification | best=logistic_regression | baseline=0.9781893847541024 | tuned=0.9835151207465049 | final={'accuracy': 0.9722222222222222, 'f1_macro': 0.9709618874773139, 'precision_macro': 0.9777777777777779, 'recall_macro': 0.9666666666666667} | kept=['alcohol_proanthocyanins_square'] | used_llm=True | 177.7s
+
+=== synthetic_no_fk.csv (target=churn) ===
+2026-08-05 22:55:20,779 | INFO    | src.data.profiler | Profiled dataset: 800 rows x 5 cols, problem=classification
+2026-08-05 22:55:21,135 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6922 (0.4s)
+2026-08-05 22:56:39,699 | INFO    | src.stages.feature_engineering | Proposed 8 features (llm=True)
+2026-08-05 22:56:40,076 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6654 (0.4s)
+2026-08-05 22:56:40,453 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6768 (0.4s)
+2026-08-05 22:56:40,849 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7040 (0.4s)
+2026-08-05 22:56:41,258 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7119 (0.4s)
+2026-08-05 22:56:41,634 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7212 (0.4s)
+2026-08-05 22:56:41,634 | WARNING | src.ml.feature_ops | Feature churn_count skipped: column 'churn' not found
+2026-08-05 22:56:42,022 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7192 (0.4s)
+2026-08-05 22:56:42,436 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7283 (0.4s)
+2026-08-05 22:56:42,436 | INFO    | src.stages.feature_engineering | Feature engineering kept 4 features; score 0.6922 -> 0.7283
+2026-08-05 22:56:56,191 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7283 (0.4s)
+2026-08-05 22:56:56,528 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.7071 (0.3s)
+2026-08-05 22:56:56,623 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.7255 (0.1s)
+2026-08-05 22:56:56,623 | INFO    | src.stages.model_selection | Selected best model: random_forest (0.7283)
+2026-08-05 22:57:05,662 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7285 (0.6s)
+2026-08-05 22:57:13,599 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7204 (0.4s)
+2026-08-05 22:57:23,091 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7221 (1.3s)
+2026-08-05 22:57:34,616 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7298 (0.4s)
+2026-08-05 22:57:47,442 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7171 (0.9s)
+2026-08-05 22:58:03,166 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7219 (1.5s)
+2026-08-05 22:58:15,971 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7216 (1.7s)
+2026-08-05 22:58:31,371 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7230 (2.0s)
+2026-08-05 22:58:31,372 | INFO    | src.stages.tuning | Tuning done. Best params={'max_depth': 15} score=0.7298
+  -> classification | best=random_forest | baseline=0.6922416361906126 | tuned=0.7297511389970641 | final={'accuracy': 0.74375, 'f1_macro': 0.6715894868585732, 'precision_macro': 0.6916062403867282, 'recall_macro': 0.6622023809523809} | kept=['income_tenure_product', 'age_region_interaction', 'tenure_months_difference', 'tenure_months_month_part'] | used_llm=True | 190.9s
+
+=== diabetes_regression.csv (target=disease_progression) ===
+2026-08-05 22:58:31,631 | INFO    | src.data.profiler | Profiled dataset: 442 rows x 11 cols, problem=regression
+2026-08-05 22:58:31,904 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4197 (0.3s)
+2026-08-05 22:59:54,291 | INFO    | src.stages.feature_engineering | Proposed 8 features (llm=True)
+2026-08-05 22:59:54,591 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4255 (0.3s)
+2026-08-05 22:59:54,904 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4284 (0.3s)
+2026-08-05 22:59:55,206 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4280 (0.3s)
+2026-08-05 22:59:55,496 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4292 (0.3s)
+2026-08-05 22:59:55,789 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4300 (0.3s)
+2026-08-05 22:59:56,082 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4310 (0.3s)
+2026-08-05 22:59:56,082 | WARNING | src.ml.feature_ops | Feature disease_progression_year_part skipped: column 'disease_progression' not found
+2026-08-05 22:59:56,437 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4284 (0.4s)
+2026-08-05 22:59:56,437 | INFO    | src.stages.feature_engineering | Feature engineering kept 5 features; score 0.4197 -> 0.4310
+2026-08-05 23:00:13,082 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.4668 (0.0s)
+2026-08-05 23:00:13,423 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4310 (0.3s)
+2026-08-05 23:00:13,614 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.4236 (0.2s)
+2026-08-05 23:00:13,614 | INFO    | src.stages.model_selection | Selected best model: ridge (0.4668)
+2026-08-05 23:00:22,952 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.4668 (0.0s)
+2026-08-05 23:00:31,918 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.4664 (0.1s)
+2026-08-05 23:00:41,046 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.4628 (0.0s)
+2026-08-05 23:00:50,109 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.3382 (0.0s)
+2026-08-05 23:01:00,508 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.0710 (0.0s)
+2026-08-05 23:01:11,725 | INFO    | src.ml.trainer | Evaluated ridge: r2=-0.0157 (0.0s)
+2026-08-05 23:01:22,982 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.4017 (0.0s)
+2026-08-05 23:01:34,440 | INFO    | src.ml.trainer | Evaluated ridge: r2=-0.0263 (0.0s)
+2026-08-05 23:01:34,440 | INFO    | src.stages.tuning | Tuning done. Best params={} score=0.4668
+  -> regression | best=ridge | baseline=0.4196708563245169 | tuned=0.4668411615609559 | final={'r2': 0.44391130872058826, 'rmse': 54.279298743004446, 'mae': 43.14139098588644} | kept=['age_bmi_ratio', 's1_s2_product', 's3_binning', 'age_bp_difference', 's4_square'] | used_llm=True | 182.8s
+
+=== california_regression.csv (target=median_house_value) ===
+2026-08-05 23:01:34,497 | INFO    | src.data.profiler | Profiled dataset: 3000 rows x 9 cols, problem=regression
+2026-08-05 23:01:35,399 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7456 (0.9s)
+2026-08-05 23:02:51,989 | INFO    | src.stages.feature_engineering | Proposed 8 features (llm=True)
+2026-08-05 23:02:52,963 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7421 (1.0s)
+2026-08-05 23:02:53,929 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7457 (1.0s)
+2026-08-05 23:02:55,033 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7447 (1.1s)
+2026-08-05 23:02:56,067 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7469 (1.0s)
+2026-08-05 23:02:56,068 | WARNING | src.ml.feature_ops | Feature house_age_median_house_value_log skipped: column 'median_house_value' not found
+2026-08-05 23:02:57,237 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7460 (1.2s)
+2026-08-05 23:02:58,351 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7478 (1.1s)
+2026-08-05 23:02:59,465 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7476 (1.1s)
+2026-08-05 23:02:59,465 | INFO    | src.stages.feature_engineering | Feature engineering kept 3 features; score 0.7456 -> 0.7478
+2026-08-05 23:03:15,561 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.5782 (0.1s)
+2026-08-05 23:03:16,690 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7478 (1.1s)
+2026-08-05 23:03:17,466 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7577 (0.8s)
+2026-08-05 23:03:17,466 | INFO    | src.stages.model_selection | Selected best model: gradient_boosting (0.7577)
+2026-08-05 23:03:26,735 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7577 (0.8s)
+2026-08-05 23:03:37,414 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7325 (0.8s)
+2026-08-05 23:03:49,420 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7523 (0.8s)
+2026-08-05 23:04:00,233 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7577 (0.8s)
+2026-08-05 23:04:16,434 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7523 (0.8s)
+2026-08-05 23:04:31,042 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7325 (0.8s)
+2026-08-05 23:04:40,300 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7766 (1.1s)
+2026-08-05 23:04:53,782 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7708 (1.4s)
+2026-08-05 23:04:53,782 | INFO    | src.stages.tuning | Tuning done. Best params={'max_depth': 5} score=0.7766
+  -> regression | best=gradient_boosting | baseline=0.745620539498353 | tuned=0.7765732019990198 | final={'r2': 0.7796968346768463, 'rmse': 0.5360127751635517, 'mae': 0.37287528078679477} | kept=['house_age_ave_rooms_interaction', 'latitude_longitude_product', 'latitude_square'] | used_llm=True | 200.3s
+
+wrote C:\Users\saina\AppData\Local\Temp\claude\C--Users-saina-OneDrive-Desktop-files\19eb3c26-3503-4fbf-b359-4dd132507c84\scratchpad\bench_llama31.json
+

@@ -1,0 +1,149 @@
+{
+  "label": "heuristic",
+  "runs": [
+    {
+      "dataset": "iris_classification.csv",
+      "target": "species",
+      "rows": 150,
+      "cols": 5,
+      "seconds": 47.4,
+      "ok": true,
+      "llm_calls": 0,
+      "llm_tokens": 0,
+      "problem_type": "classification",
+      "best_model": "gradient_boosting",
+      "best_params": {},
+      "baseline_score": 0.9664818612187034,
+      "model_selection_score": 0.9666165413533834,
+      "tuned_score": 0.9666165413533834,
+      "final_metrics": {
+        "accuracy": 0.9666666666666667,
+        "f1_macro": 0.9665831244778612,
+        "precision_macro": 0.9696969696969697,
+        "recall_macro": 0.9666666666666667
+      },
+      "kept_features": [],
+      "used_llm": false,
+      "n_decisions": 25
+    },
+    {
+      "dataset": "wine_classification.csv",
+      "target": "wine_class",
+      "rows": 178,
+      "cols": 14,
+      "seconds": 25.8,
+      "ok": true,
+      "llm_calls": 0,
+      "llm_tokens": 0,
+      "problem_type": "classification",
+      "best_model": "logistic_regression",
+      "best_params": {
+        "C": 0.1
+      },
+      "baseline_score": 0.9781893847541024,
+      "model_selection_score": 0.9835151207465049,
+      "tuned_score": 0.9838947225613893,
+      "final_metrics": {
+        "accuracy": 1.0,
+        "f1_macro": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0
+      },
+      "kept_features": [
+        "alcohol_over_total_phenols"
+      ],
+      "used_llm": false,
+      "n_decisions": 25
+    },
+    {
+      "dataset": "synthetic_no_fk.csv",
+      "target": "churn",
+      "rows": 800,
+      "cols": 5,
+      "seconds": 31.2,
+      "ok": true,
+      "llm_calls": 0,
+      "llm_tokens": 0,
+      "problem_type": "classification",
+      "best_model": "gradient_boosting",
+      "best_params": {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "max_depth": 3
+      },
+      "baseline_score": 0.6922416361906126,
+      "model_selection_score": 0.7203268368396335,
+      "tuned_score": 0.7218141070652498,
+      "final_metrics": {
+        "accuracy": 0.76875,
+        "f1_macro": 0.7159172705024233,
+        "precision_macro": 0.7242098986285033,
+        "recall_macro": 0.7098214285714286
+      },
+      "kept_features": [
+        "age_over_tenure_months",
+        "income_over_tenure_months"
+      ],
+      "used_llm": false,
+      "n_decisions": 25
+    },
+    {
+      "dataset": "diabetes_regression.csv",
+      "target": "disease_progression",
+      "rows": 442,
+      "cols": 11,
+      "seconds": 23.7,
+      "ok": true,
+      "llm_calls": 0,
+      "llm_tokens": 0,
+      "problem_type": "regression",
+      "best_model": "linear_regression",
+      "best_params": {},
+      "baseline_score": 0.4196708563245169,
+      "model_selection_score": 0.49238000093052403,
+      "tuned_score": 0.49238000093052403,
+      "final_metrics": {
+        "r2": 0.4799744995868934,
+        "rmse": 52.48975151671916,
+        "mae": 41.86147592515788
+      },
+      "kept_features": [
+        "age_over_sex",
+        "age_over_bmi"
+      ],
+      "used_llm": false,
+      "n_decisions": 25
+    },
+    {
+      "dataset": "california_regression.csv",
+      "target": "median_house_value",
+      "rows": 3000,
+      "cols": 9,
+      "seconds": 50.2,
+      "ok": true,
+      "llm_calls": 0,
+      "llm_tokens": 0,
+      "problem_type": "regression",
+      "best_model": "random_forest",
+      "best_params": {
+        "n_estimators": 200,
+        "max_depth": null,
+        "min_samples_leaf": 2
+      },
+      "baseline_score": 0.745620539498353,
+      "model_selection_score": 0.7532611400341105,
+      "tuned_score": 0.7549939012480376,
+      "final_metrics": {
+        "r2": 0.7527775460052131,
+        "rmse": 0.567817441619711,
+        "mae": 0.3884916488641926
+      },
+      "kept_features": [
+        "MedInc_over_Population",
+        "MedInc_over_AveOccup"
+      ],
+      "used_llm": false,
+      "n_decisions": 25
+    }
+  ]
+}

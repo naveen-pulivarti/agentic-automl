@@ -1,0 +1,149 @@
+{
+  "label": "llama31",
+  "runs": [
+    {
+      "dataset": "iris_classification.csv",
+      "target": "species",
+      "rows": 150,
+      "cols": 5,
+      "seconds": 163.4,
+      "ok": true,
+      "llm_calls": 10,
+      "llm_tokens": 4322,
+      "problem_type": "classification",
+      "best_model": "gradient_boosting",
+      "best_params": {},
+      "baseline_score": 0.9664818612187034,
+      "model_selection_score": 0.9666165413533834,
+      "tuned_score": 0.9666165413533834,
+      "final_metrics": {
+        "accuracy": 0.9666666666666667,
+        "f1_macro": 0.9665831244778612,
+        "precision_macro": 0.9696969696969697,
+        "recall_macro": 0.9666666666666667
+      },
+      "kept_features": [],
+      "used_llm": true,
+      "n_decisions": 23
+    },
+    {
+      "dataset": "wine_classification.csv",
+      "target": "wine_class",
+      "rows": 178,
+      "cols": 14,
+      "seconds": 177.7,
+      "ok": true,
+      "llm_calls": 10,
+      "llm_tokens": 5000,
+      "problem_type": "classification",
+      "best_model": "logistic_regression",
+      "best_params": {},
+      "baseline_score": 0.9781893847541024,
+      "model_selection_score": 0.9835151207465049,
+      "tuned_score": 0.9835151207465049,
+      "final_metrics": {
+        "accuracy": 0.9722222222222222,
+        "f1_macro": 0.9709618874773139,
+        "precision_macro": 0.9777777777777779,
+        "recall_macro": 0.9666666666666667
+      },
+      "kept_features": [
+        "alcohol_proanthocyanins_square"
+      ],
+      "used_llm": true,
+      "n_decisions": 24
+    },
+    {
+      "dataset": "synthetic_no_fk.csv",
+      "target": "churn",
+      "rows": 800,
+      "cols": 5,
+      "seconds": 190.9,
+      "ok": true,
+      "llm_calls": 10,
+      "llm_tokens": 4363,
+      "problem_type": "classification",
+      "best_model": "random_forest",
+      "best_params": {
+        "max_depth": 15
+      },
+      "baseline_score": 0.6922416361906126,
+      "model_selection_score": 0.7282921476049831,
+      "tuned_score": 0.7297511389970641,
+      "final_metrics": {
+        "accuracy": 0.74375,
+        "f1_macro": 0.6715894868585732,
+        "precision_macro": 0.6916062403867282,
+        "recall_macro": 0.6622023809523809
+      },
+      "kept_features": [
+        "income_tenure_product",
+        "age_region_interaction",
+        "tenure_months_difference",
+        "tenure_months_month_part"
+      ],
+      "used_llm": true,
+      "n_decisions": 24
+    },
+    {
+      "dataset": "diabetes_regression.csv",
+      "target": "disease_progression",
+      "rows": 442,
+      "cols": 11,
+      "seconds": 182.8,
+      "ok": true,
+      "llm_calls": 10,
+      "llm_tokens": 4826,
+      "problem_type": "regression",
+      "best_model": "ridge",
+      "best_params": {},
+      "baseline_score": 0.4196708563245169,
+      "model_selection_score": 0.4668411615609559,
+      "tuned_score": 0.4668411615609559,
+      "final_metrics": {
+        "r2": 0.44391130872058826,
+        "rmse": 54.279298743004446,
+        "mae": 43.14139098588644
+      },
+      "kept_features": [
+        "age_bmi_ratio",
+        "s1_s2_product",
+        "s3_binning",
+        "age_bp_difference",
+        "s4_square"
+      ],
+      "used_llm": true,
+      "n_decisions": 24
+    },
+    {
+      "dataset": "california_regression.csv",
+      "target": "median_house_value",
+      "rows": 3000,
+      "cols": 9,
+      "seconds": 200.3,
+      "ok": true,
+      "llm_calls": 10,
+      "llm_tokens": 4748,
+      "problem_type": "regression",
+      "best_model": "gradient_boosting",
+      "best_params": {
+        "max_depth": 5
+      },
+      "baseline_score": 0.745620539498353,
+      "model_selection_score": 0.7577401432159103,
+      "tuned_score": 0.7765732019990198,
+      "final_metrics": {
+        "r2": 0.7796968346768463,
+        "rmse": 0.5360127751635517,
+        "mae": 0.37287528078679477
+      },
+      "kept_features": [
+        "house_age_ave_rooms_interaction",
+        "latitude_longitude_product",
+        "latitude_square"
+      ],
+      "used_llm": true,
+      "n_decisions": 24
+    }
+  ]
+}

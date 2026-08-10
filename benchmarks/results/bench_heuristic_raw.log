@@ -1,0 +1,198 @@
+
+=== iris_classification.csv (target=species) ===
+2026-08-05 22:35:19,174 | INFO    | src.data.profiler | Profiled dataset: 150 rows x 5 cols, problem=classification
+2026-08-05 22:35:25,444 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9665 (6.3s)
+2026-08-05 22:35:27,616 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:35:27,621 | INFO    | src.stages.feature_engineering | Proposed 8 features (llm=False)
+2026-08-05 22:35:32,581 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9598 (4.9s)
+2026-08-05 22:35:37,163 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9665 (4.6s)
+2026-08-05 22:35:37,806 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9598 (0.6s)
+2026-08-05 22:35:38,297 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9598 (0.5s)
+2026-08-05 22:35:38,707 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9598 (0.4s)
+2026-08-05 22:35:39,173 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9461 (0.5s)
+2026-08-05 22:35:39,563 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9665 (0.4s)
+2026-08-05 22:35:39,943 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9665 (0.4s)
+2026-08-05 22:35:39,943 | INFO    | src.stages.feature_engineering | Feature engineering kept 0 features; score 0.9665 -> 0.9665
+2026-08-05 22:35:41,965 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:35:42,039 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9598 (0.1s)
+2026-08-05 22:35:42,430 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9665 (0.4s)
+2026-08-05 22:35:42,852 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.4s)
+2026-08-05 22:35:43,199 | INFO    | src.ml.trainer | Evaluated extra_trees: f1_macro=0.9528 (0.3s)
+2026-08-05 22:35:43,200 | INFO    | src.stages.model_selection | Selected best model: gradient_boosting (0.9666)
+2026-08-05 22:35:45,225 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:35:46,000 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.8s)
+2026-08-05 22:35:48,036 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:35:49,386 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (1.4s)
+2026-08-05 22:35:51,414 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:35:52,212 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9599 (0.8s)
+2026-08-05 22:35:54,235 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:35:54,685 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.5s)
+2026-08-05 22:35:56,709 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:35:57,513 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.8s)
+2026-08-05 22:35:59,530 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:00,794 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (1.3s)
+2026-08-05 22:36:02,806 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:03,583 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9599 (0.8s)
+2026-08-05 22:36:05,603 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:06,056 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9666 (0.5s)
+2026-08-05 22:36:06,056 | INFO    | src.stages.tuning | Tuning done. Best params={} score=0.9666
+  -> classification | best=gradient_boosting | baseline=0.9664818612187034 | tuned=0.9666165413533834 | final={'accuracy': 0.9666666666666667, 'f1_macro': 0.9665831244778612, 'precision_macro': 0.9696969696969697, 'recall_macro': 0.9666666666666667} | kept=[] | used_llm=False | 47.4s
+
+=== wine_classification.csv (target=wine_class) ===
+2026-08-05 22:36:06,439 | INFO    | src.data.profiler | Profiled dataset: 178 rows x 14 cols, problem=classification
+2026-08-05 22:36:06,842 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9782 (0.4s)
+2026-08-05 22:36:08,895 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:08,895 | INFO    | src.stages.feature_engineering | Proposed 8 features (llm=False)
+2026-08-05 22:36:09,283 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9726 (0.4s)
+2026-08-05 22:36:09,683 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9726 (0.4s)
+2026-08-05 22:36:10,087 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9782 (0.4s)
+2026-08-05 22:36:10,487 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9778 (0.4s)
+2026-08-05 22:36:10,887 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9834 (0.4s)
+2026-08-05 22:36:11,298 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9778 (0.4s)
+2026-08-05 22:36:11,712 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9508 (0.4s)
+2026-08-05 22:36:12,102 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9560 (0.4s)
+2026-08-05 22:36:12,102 | INFO    | src.stages.feature_engineering | Feature engineering kept 1 features; score 0.9782 -> 0.9834
+2026-08-05 22:36:14,113 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:14,176 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9835 (0.1s)
+2026-08-05 22:36:14,590 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.9834 (0.4s)
+2026-08-05 22:36:15,162 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.9462 (0.6s)
+2026-08-05 22:36:15,477 | INFO    | src.ml.trainer | Evaluated extra_trees: f1_macro=0.9834 (0.3s)
+2026-08-05 22:36:15,477 | INFO    | src.stages.model_selection | Selected best model: logistic_regression (0.9835)
+2026-08-05 22:36:17,510 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:17,592 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9835 (0.1s)
+2026-08-05 22:36:19,625 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:19,689 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9779 (0.1s)
+2026-08-05 22:36:21,717 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:21,780 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9734 (0.1s)
+2026-08-05 22:36:23,801 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:23,875 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9839 (0.1s)
+2026-08-05 22:36:25,888 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:25,955 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9835 (0.1s)
+2026-08-05 22:36:27,980 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:28,043 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9779 (0.1s)
+2026-08-05 22:36:30,060 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:30,121 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9734 (0.1s)
+2026-08-05 22:36:32,151 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:32,216 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.9839 (0.1s)
+2026-08-05 22:36:32,216 | INFO    | src.stages.tuning | Tuning done. Best params={'C': 0.1} score=0.9839
+  -> classification | best=logistic_regression | baseline=0.9781893847541024 | tuned=0.9838947225613893 | final={'accuracy': 1.0, 'f1_macro': 1.0, 'precision_macro': 1.0, 'recall_macro': 1.0} | kept=['alcohol_over_total_phenols'] | used_llm=False | 25.8s
+
+=== synthetic_no_fk.csv (target=churn) ===
+2026-08-05 22:36:32,272 | INFO    | src.data.profiler | Profiled dataset: 800 rows x 5 cols, problem=classification
+2026-08-05 22:36:32,699 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6922 (0.4s)
+2026-08-05 22:36:34,721 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:34,721 | INFO    | src.stages.feature_engineering | Proposed 8 features (llm=False)
+2026-08-05 22:36:35,160 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6654 (0.4s)
+2026-08-05 22:36:35,621 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6926 (0.5s)
+2026-08-05 22:36:36,210 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6888 (0.6s)
+2026-08-05 22:36:36,688 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7007 (0.5s)
+2026-08-05 22:36:37,169 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6949 (0.5s)
+2026-08-05 22:36:37,639 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6837 (0.5s)
+2026-08-05 22:36:38,069 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6868 (0.4s)
+2026-08-05 22:36:38,511 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.6790 (0.4s)
+2026-08-05 22:36:38,512 | INFO    | src.stages.feature_engineering | Feature engineering kept 2 features; score 0.6922 -> 0.7007
+2026-08-05 22:36:40,528 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:40,600 | INFO    | src.ml.trainer | Evaluated logistic_regression: f1_macro=0.7165 (0.1s)
+2026-08-05 22:36:41,048 | INFO    | src.ml.trainer | Evaluated random_forest: f1_macro=0.7007 (0.4s)
+2026-08-05 22:36:41,426 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.7203 (0.4s)
+2026-08-05 22:36:41,806 | INFO    | src.ml.trainer | Evaluated extra_trees: f1_macro=0.6881 (0.4s)
+2026-08-05 22:36:41,806 | INFO    | src.stages.model_selection | Selected best model: gradient_boosting (0.7203)
+2026-08-05 22:36:43,823 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:44,427 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.7218 (0.6s)
+2026-08-05 22:36:46,445 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:47,458 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.6939 (1.0s)
+2026-08-05 22:36:49,497 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:50,365 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.6746 (0.9s)
+2026-08-05 22:36:52,436 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:52,861 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.7203 (0.4s)
+2026-08-05 22:36:54,895 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:55,390 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.7218 (0.5s)
+2026-08-05 22:36:57,417 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:36:58,171 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.6939 (0.8s)
+2026-08-05 22:37:00,205 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:00,870 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.6746 (0.7s)
+2026-08-05 22:37:02,888 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:03,134 | INFO    | src.ml.trainer | Evaluated gradient_boosting: f1_macro=0.7203 (0.2s)
+2026-08-05 22:37:03,134 | INFO    | src.stages.tuning | Tuning done. Best params={'n_estimators': 200, 'learning_rate': 0.05, 'max_depth': 3} score=0.7218
+  -> classification | best=gradient_boosting | baseline=0.6922416361906126 | tuned=0.7218141070652498 | final={'accuracy': 0.76875, 'f1_macro': 0.7159172705024233, 'precision_macro': 0.7242098986285033, 'recall_macro': 0.7098214285714286} | kept=['age_over_tenure_months', 'income_over_tenure_months'] | used_llm=False | 31.2s
+
+=== diabetes_regression.csv (target=disease_progression) ===
+2026-08-05 22:37:03,469 | INFO    | src.data.profiler | Profiled dataset: 442 rows x 11 cols, problem=regression
+2026-08-05 22:37:03,786 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4197 (0.3s)
+2026-08-05 22:37:05,803 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:05,803 | INFO    | src.stages.feature_engineering | Proposed 8 features (llm=False)
+2026-08-05 22:37:06,073 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4357 (0.3s)
+2026-08-05 22:37:06,360 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4394 (0.3s)
+2026-08-05 22:37:06,632 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4348 (0.3s)
+2026-08-05 22:37:06,932 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4291 (0.3s)
+2026-08-05 22:37:07,226 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4355 (0.3s)
+2026-08-05 22:37:07,493 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4317 (0.3s)
+2026-08-05 22:37:07,764 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4341 (0.3s)
+2026-08-05 22:37:08,048 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4302 (0.3s)
+2026-08-05 22:37:08,048 | INFO    | src.stages.feature_engineering | Feature engineering kept 2 features; score 0.4197 -> 0.4394
+2026-08-05 22:37:10,081 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:10,120 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.4922 (0.0s)
+2026-08-05 22:37:10,169 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.4924 (0.0s)
+2026-08-05 22:37:10,464 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.4394 (0.3s)
+2026-08-05 22:37:10,630 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.4306 (0.2s)
+2026-08-05 22:37:10,630 | INFO    | src.stages.model_selection | Selected best model: linear_regression (0.4924)
+2026-08-05 22:37:12,652 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:12,690 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.4924 (0.0s)
+2026-08-05 22:37:14,715 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:14,753 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.4924 (0.0s)
+2026-08-05 22:37:16,786 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:16,823 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.4924 (0.0s)
+2026-08-05 22:37:18,853 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:18,890 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.4924 (0.0s)
+2026-08-05 22:37:20,915 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:20,956 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.4924 (0.0s)
+2026-08-05 22:37:22,982 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:23,022 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.4924 (0.0s)
+2026-08-05 22:37:25,058 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:25,098 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.4924 (0.0s)
+2026-08-05 22:37:27,120 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:27,160 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.4924 (0.0s)
+2026-08-05 22:37:27,160 | INFO    | src.stages.tuning | Tuning done. Best params={} score=0.4924
+  -> regression | best=linear_regression | baseline=0.4196708563245169 | tuned=0.49238000093052403 | final={'r2': 0.4799744995868934, 'rmse': 52.48975151671916, 'mae': 41.86147592515788} | kept=['age_over_sex', 'age_over_bmi'] | used_llm=False | 23.7s
+
+=== california_regression.csv (target=median_house_value) ===
+2026-08-05 22:37:27,196 | INFO    | src.data.profiler | Profiled dataset: 3000 rows x 9 cols, problem=regression
+2026-08-05 22:37:28,015 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7456 (0.8s)
+2026-08-05 22:37:30,046 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:30,046 | INFO    | src.stages.feature_engineering | Proposed 8 features (llm=False)
+2026-08-05 22:37:30,933 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7421 (0.9s)
+2026-08-05 22:37:31,913 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7323 (1.0s)
+2026-08-05 22:37:32,811 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7426 (0.9s)
+2026-08-05 22:37:34,372 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7457 (1.6s)
+2026-08-05 22:37:35,638 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7533 (1.3s)
+2026-08-05 22:37:37,043 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7505 (1.4s)
+2026-08-05 22:37:38,234 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7529 (1.2s)
+2026-08-05 22:37:39,600 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7522 (1.4s)
+2026-08-05 22:37:39,601 | INFO    | src.stages.feature_engineering | Feature engineering kept 2 features; score 0.7456 -> 0.7533
+2026-08-05 22:37:41,621 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:41,671 | INFO    | src.ml.trainer | Evaluated ridge: r2=0.6552 (0.1s)
+2026-08-05 22:37:41,747 | INFO    | src.ml.trainer | Evaluated linear_regression: r2=0.6552 (0.1s)
+2026-08-05 22:37:43,046 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7533 (1.3s)
+2026-08-05 22:37:43,739 | INFO    | src.ml.trainer | Evaluated gradient_boosting: r2=0.7532 (0.7s)
+2026-08-05 22:37:43,740 | INFO    | src.stages.model_selection | Selected best model: random_forest (0.7533)
+2026-08-05 22:37:45,779 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:47,162 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7456 (1.4s)
+2026-08-05 22:37:49,210 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:52,226 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7546 (3.0s)
+2026-08-05 22:37:54,258 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:37:56,016 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7550 (1.8s)
+2026-08-05 22:37:58,050 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:38:01,840 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7546 (3.8s)
+2026-08-05 22:38:03,848 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:38:04,924 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7533 (1.1s)
+2026-08-05 22:38:06,948 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:38:08,292 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7456 (1.3s)
+2026-08-05 22:38:10,329 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:38:13,195 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7546 (2.9s)
+2026-08-05 22:38:15,235 | WARNING | src.agent.llm | LLM unavailable (Ollama call failed: HTTPConnectionPool(host='127.0.0.1', port=1): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=1): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))); using heuristic fallback.
+2026-08-05 22:38:16,818 | INFO    | src.ml.trainer | Evaluated random_forest: r2=0.7550 (1.6s)
+2026-08-05 22:38:16,818 | INFO    | src.stages.tuning | Tuning done. Best params={'n_estimators': 200, 'max_depth': None, 'min_samples_leaf': 2} score=0.7550
+  -> regression | best=random_forest | baseline=0.745620539498353 | tuned=0.7549939012480376 | final={'r2': 0.7527775460052131, 'rmse': 0.567817441619711, 'mae': 0.3884916488641926} | kept=['MedInc_over_Population', 'MedInc_over_AveOccup'] | used_llm=False | 50.2s
+
+wrote C:\Users\saina\AppData\Local\Temp\claude\C--Users-saina-OneDrive-Desktop-files\19eb3c26-3503-4fbf-b359-4dd132507c84\scratchpad\bench_heuristic.json
+
