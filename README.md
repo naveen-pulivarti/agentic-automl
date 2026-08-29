@@ -148,4 +148,4 @@ benchmarks/                reproducible measurement harness
   always states honestly which stages actually used the LLM.
 
 
-  <img src="data/app.png" alt="Application Screenshot" width="800">
+![Application Screenshot](data/App.png)
