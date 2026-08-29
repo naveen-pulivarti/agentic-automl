@@ -147,5 +147,5 @@ benchmarks/                reproducible measurement harness
   deterministic heuristic fallbacks — the core reliability guarantee. The report
   always states honestly which stages actually used the LLM.
 
-
+## APP UI
 ![Application Screenshot](data/App.png)
