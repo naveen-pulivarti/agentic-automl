@@ -146,3 +146,6 @@ benchmarks/                reproducible measurement harness
 - The system produces a valid result even with **no LLM available**, using
   deterministic heuristic fallbacks — the core reliability guarantee. The report
   always states honestly which stages actually used the LLM.
+
+
+  <img src="data/app.png" alt="Application Screenshot" width="800">
